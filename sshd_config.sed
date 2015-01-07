@@ -1,5 +1,5 @@
-/KexAlgorithms/d
-\#/etc/ssh/ssh_host_dsa_key#d
-\#/etc/ssh/ssh_host_ecdsa_key#d
-/^Ciphers/d
-/^MACs/d
+/^[[:space:]]*KexAlgorithms/d
+/^[[:space:]]*Protocol/d
+\#^[[:space:]]*HostKey[[:space:]]*/etc/ssh/ssh_host.*_key#d
+/^[[:space:]]*Ciphers/d
+/^[[:space:]]*MACs/d

@@ -1,3 +1,3 @@
-/KexAlgorithms/d
+/^[[:space:]]*KexAlgorithms/d
 /^[[:space:]]*Ciphers/d
-/^MACs/d
+/^[[:space:]]*MACs/d

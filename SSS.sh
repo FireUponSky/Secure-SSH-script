@@ -1,5 +1,5 @@
 #!/bin/bash
-cp -a /etc/ssh ./ssh.bak
+cp -a /etc/ssh /root/ssh.bak
 SSS_SCRIPT_PATH=$(pwd)
 cd /etc/ssh
 sed -f $SSS_SCRIPT_PATH/sshd_config.sed -i sshd_config

@@ -12,20 +12,20 @@
 ### openssh 6 及以上版本
 使用 `master` 分支。使用方法：
 
-<pre><code>
+```bash
 sudo sh ./SSS.sh
 sudo service ssh restart
-</code></pre>
+```
 
 脚本会备份原来的 `/etc/ssh` 为 `/root/ssh.bak` ，**重启 `ssh` 服务前，请仔细检查 `sshd_conf`,`ssh_conf` 文件的设置，否则有可能导致无法登入服务器！**
 
 ### openssh 5
 由于这个版本的 openssh 不支持某些加密算法，所以请使用 `oldOpenSSH` 分支。使用方法：
 
-<pre><code>
+```bash
 sudo sh ./SSS.sh
 sudo service ssh restart
-</code></pre>
+```
 
 脚本会备份原来的 `/etc/ssh` 为 `/root/ssh.bak` ，**重启 `ssh` 服务前，请仔细检查 `sshd_conf`,`ssh_conf` 文件的设置，否则有可能导致无法登入服务器！**
 
@@ -47,23 +47,23 @@ It will carry out most settings[^1] in the aricle to improve the security of ope
 ### openssh 6 and above
 Use `master` branch:
 
-<pre><code>
+```bash
 sudo sh ./SSS.sh
 sudo service ssh restart
-</code></pre>
+```
 
 Script will back up original `/etc/ssh` to `/root/ssh.bak` ，**before you restart `ssh` service，check `sshd_conf` and `ssh_conf` , incorrect settings can block you from logining to your computer!**
 
 ### openssh 5
 Use `oldOpenSSH` branch:
 
-<pre><code>
+```bash
 sudo sh ./SSS.sh
 sudo service ssh restart
-</code></pre>
+```
 
 Script will back up original `/etc/ssh` to `/root/ssh.bak` ，**before you restart `ssh` service，check `sshd_conf` and `ssh_conf` , incorrect settings can block you from logining to your computer!**
 
-##注释
+##Footnotes
 
 [^1]: `Traffic analysis resistance` in ["Secure Secure Shell"](https://stribika.github.io/2015/01/04/secure-secure-shell.html) is not considered in this script, since it use `Tor`.

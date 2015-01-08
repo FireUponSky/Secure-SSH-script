@@ -3,7 +3,3 @@
     KexAlgorithms diffie-hellman-group-exchange-sha256
     Ciphers aes256-ctr,aes192-ctr,aes128-ctr
     MACs hmac-sha2-512,hmac-sha2-256,hmac-ripemd160
-
-# Github supports neither AE nor Encrypt-then-MAC.
-Host github.com
-    MACs hmac-sha2-512,hmac-sha2-256,hmac-ripemd160

@@ -8,8 +8,9 @@ sed -f $SSS_SCRIPT_PATH/ssh_config.sed -i ssh_config
 cat $SSS_SCRIPT_PATH/ssh_config.add >> ssh_config
 if ! [ -e moduli ]
 then
-    ssh-keygen -G /tmp/moduli -b 4096
-    ssh-keygen -T /etc/ssh/moduli -f /tmp/moduli
+    ssh-keygen -G /root/moduli -b 4096
+    ssh-keygen -T /etc/ssh/moduli -f /root/moduli
+    rm -f /root/moduli
 else
     sed -i "/^\([0-9]\+[[:space:]]\+\)\{4\}1[0-9]\{3\}/d" moduli
 fi

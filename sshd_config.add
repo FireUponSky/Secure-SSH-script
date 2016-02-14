@@ -2,6 +2,7 @@
 PubkeyAuthentication yes
 PasswordAuthentication no
 ChallengeResponseAuthentication no
+AuthenticationMethods publickey
 PermitRootLogin no
 KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256
 Ciphers chacha20-poly1305@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr

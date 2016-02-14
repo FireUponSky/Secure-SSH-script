@@ -8,3 +8,4 @@
 /^[[:space:]]*ChallengeResponseAuthentication/d
 /^[[:space:]]*PubkeyAuthentication/d
 /^[[:space:]]*PermitRootLogin/d
+/^[[:space:]]*AuthenticationMethods/d

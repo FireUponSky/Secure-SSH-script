@@ -10,3 +10,4 @@
 /^[[:space:]]*PubkeyAuthentication/d
 /^[[:space:]]*HostKeyAlgorithms/d
 /^[[:space:]]*UseRoaming/d
+/^[[:space:]]*HashKnownHosts/d

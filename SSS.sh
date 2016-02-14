@@ -2,7 +2,7 @@
 #Inert newline to file end if it doesn't end with one
 function aNewLine {
     NEWLINEFLAG=`tail -c 1 $1`
-    if [ -z "$NEWLINEFLAG" ];then
+    if [ -n "$NEWLINEFLAG" ];then
         echo "Insert newline to $1."
         printf "\n" >> $1
     fi
@@ -17,8 +17,8 @@ sed -f $SSS_SCRIPT_PATH/sshd_config.sed -i sshd_config
 cat $SSS_SCRIPT_PATH/sshd_config.add >> sshd_config
 sed -f $SSS_SCRIPT_PATH/ssh_config.sed -i ssh_config
 #Get if there are any valuable HOST * first
-HOSTSTARFLAG=`grep -io "^\s*HOST\s*\*"` ssh_config
-if [ -z $HOSTSTARFLAG ];then
+HOSTSTARFLAG=`grep -io "^\s*HOST\s*\*" ssh_config`
+if [ -z "$HOSTSTARFLAG" ];then
     printf "HOST *\n" >> ssh_config
 fi
 cat $SSS_SCRIPT_PATH/ssh_config.add >> ssh_config

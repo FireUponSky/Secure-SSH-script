@@ -4,3 +4,4 @@
 /^[[:space:]]*Ciphers/d
 /^[[:space:]]*MACs/d
 /# See Secure Secure Shell/d
+/^[[:space:]]RequiredAuthentications2/d

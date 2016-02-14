@@ -1,4 +1,3 @@
-
 # See Secure Secure Shell
 PubkeyAuthentication yes
 PasswordAuthentication no

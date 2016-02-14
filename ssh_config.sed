@@ -7,3 +7,6 @@
 /^# See Secure Secure Shell/d
 /^# Github supports neither AE nor Encrypt-then-MAC./d
 /Host github.com/d
+/^[[:space:]]*PubkeyAuthentication/d
+/^[[:space:]]*HostKeyAlgorithms/d
+/^[[:space:]]*UseRoaming/d
